@@ -24,10 +24,11 @@ body {
 .panel {
   background: var(--background);
   width: 32%;
-  margin: 28vh auto;
+  margin: 25vh auto;
   text-align: center;
   border-radius: .5em;
   padding: 1.35em;
+  position: relative;
 }
 
 .panel-heading {
@@ -39,6 +40,7 @@ body {
 
 .panel-body {
   font-size: 1.08rem;
+  margin-bottom: 0.35em;
 }
 
 .advice {
@@ -48,5 +50,24 @@ body {
 .image {
   width: 100%;
   margin-bottom: 0.5em;
+}
+
+.panel-button {
+  --width: 70px;
+  position: absolute;
+  bottom: calc(-(var(--width)/2));
+  border: 0;
+  border-radius: 50%;
+  background: var(--highlight);
+  left: calc(50% - (var(--width)/2));
+  width: var(--width);
+  height: var(--width);
+  text-align: center;
+  cursor: pointer;
+}
+
+.panel-button:hover {
+  -webkit-box-shadow: 0px 0px 30px 5px var(--highlight);
+          box-shadow: 0px 0px 30px 5px var(--highlight);
 }
 /*# sourceMappingURL=style.css.map */
