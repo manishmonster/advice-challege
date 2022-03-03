@@ -7,10 +7,46 @@
   --background: hsl(217, 19%, 24%);
   --DarkBlue: hsl(218, 23%, 16%);
   font-size: 28px;
+  --color1: #4F5D74;
+}
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
 body {
-  background: var(--background);
+  background: var(--DarkBlue);
   color: var(--text);
+  font-weight: 600;
+}
+
+.panel {
+  background: var(--background);
+  width: 32%;
+  margin: 28vh auto;
+  text-align: center;
+  border-radius: .5em;
+  padding: 1.35em;
+}
+
+.panel-heading {
+  font-size: 0.5rem;
+  color: var(--highlight);
+  text-transform: uppercase;
+  letter-spacing: .25em;
+}
+
+.panel-body {
+  font-size: 1.08rem;
+}
+
+.advice {
+  padding: 1em 0;
+}
+
+.image {
+  width: 100%;
+  margin-bottom: 0.5em;
 }
 /*# sourceMappingURL=style.css.map */
